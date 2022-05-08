@@ -18,6 +18,7 @@ def gifConverter(inpath, targetForm):
     writer.close()
 
 
+# Add this script to a folder where the .mp4 files are to be converted to gif.
 for i in path.glob("*.mp4"):
     clip = os.path.abspath(i)
     gifConverter(clip, ".gif")
